@@ -4,9 +4,8 @@ body {
 
 .wrapper {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 50px;
   grid-template-columns: repeat(4, [col] 150px);
-  grid-template-rows: repeat(2, [row] auto);
   background-color: #fff;
   color: #444;
   justify-content: center;
@@ -22,17 +21,10 @@ body {
 
 .box .box {
   background-color: #ccc;
+}
+
+.headTitle {
   color: #444;
-}
-
-.a {
-  grid-column: col / span 2;
-  grid-row: row;
-}
-
-.b {
-  grid-column: col 3 / span 2;
-  grid-row: row;
 }
 
 .c {
@@ -54,6 +46,7 @@ body {
 }
 
 .f {
+  display: block;
   grid-column: 1;
   grid-row: 2;
 }
@@ -61,4 +54,9 @@ body {
 .g {
   grid-column: 2;
   grid-row: 2;
+  float: left;
+}
+
+img {
+  float: left;
 }
