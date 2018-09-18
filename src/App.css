@@ -8,14 +8,15 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 1fr 1fr 1fr; */
   grid-template-areas:
-    '. title title .'
+    '. title . .'
     /* '. header header .' */
-    '. content content .'
-    '. footer footer .';
+    '. . content .'
+    '. footer . .';
 }
 
 .title {
-  grid-column: 2 / 3;
+  margin-top: 150px;
+  grid-column: 2 / 4;
 }
 
 /* .header {
@@ -31,9 +32,9 @@
   /* grid-area: content; */
   /* justify-self: end; */
   /* align-self: end; */
-  grid-area: 2 / 3;
+  grid-area: 4 / 2;
 }
 
 .footer {
-  grid-area: 3 / 2;
+  grid-area: 2 / 4;
 }
