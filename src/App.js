@@ -4,12 +4,15 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="grid">
-        <div className="title">Title</div>
-        {/* <div className="header">Header</div> */}
-        {/* <div className="sidebar">Sidebar</div> */}
-        <div className="content">Content</div>
-        <div className="footer">Footer</div>
+      <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">
+          <div class="box e">E</div>
+          <div class="box f">F</div>
+          <div class="box g">G</div>
+        </div>
       </div>
     );
   }
